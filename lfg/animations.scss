@@ -1,0 +1,11 @@
+.animating-width {
+  background: #e78629;
+  color: white;
+  height: 100px;
+  width: 50%;
+  @include transition(.3s width ease-in-out); // the transition effect for hover
+  &:hover {
+    cursor: pointer;
+    width: 100%; // animating to full width on hover
+  }
+}
